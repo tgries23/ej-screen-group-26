@@ -1,0 +1,11 @@
+---
+title: "Group 26 CA pollution burden"
+author: "Taylor Gries and Cristina Robinson"
+date: "11/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
