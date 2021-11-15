@@ -19,6 +19,6 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 
 ```{r}
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) + 
-geom_point() # create scatterplot graph 
+geom_point() # create basic scatterplot graph 
 ```
 
