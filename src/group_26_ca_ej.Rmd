@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE) # Attach packages
 library(tidyverse)
 library(janitor)
 library(here)
+library(hexbin) # Make sure to install "hexbin" in console
 ```
 
 ```{r}
@@ -19,6 +20,8 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 
 ```{r}
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) + 
-geom_point() # create scatterplot graph 
+geom_hex() + # create 2D hexbin graph 
+  labs(x = "% White", # add in axis labels
+       y = "CalEnviroScreen Score")
 ```
 
