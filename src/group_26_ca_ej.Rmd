@@ -22,6 +22,5 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) + 
 geom_hex() + # create 2D hexbin graph 
   labs(x = "% White", # add in axis labels
-       y = "CalEnviroScreen Score")
+       y = "CalEnviroScreen Score") # re-ran and pushing again
 ```
-
