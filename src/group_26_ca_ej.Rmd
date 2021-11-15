@@ -5,8 +5,8 @@ date: "11/12/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE) # Attach packages
+```{r setup, include = TRUE, warning = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE) # Attach packages
 library(tidyverse)
 library(janitor)
 library(here)
@@ -28,8 +28,9 @@ geom_hex() + # create 2D hexbin graph
   theme_minimal() # update graph to theme minimal 
 
 ```
-*Figure 1*: The CalEnviroScreen pollution burden score for % of white populations based on the California census.
+
+**Figure 1**: The CalEnviroScreen pollution burden score for % of white populations based on the California census.
 
 It is observed in Figure 1 that higher percent of white populations (and with higher counts) have a lower CalEnviroScreen Score, which is correlated to a lower cumulative pollution burden and lower vulnerable population characteristics. The CalEnviroScreen 3.0 indicators include pollution burdens such as exposures and environmental effects, as well as population characteristics such as sensitive populations and socioeconomic factors, resulting in the final CalEnviroScreen 3.0 Score.
 
-*Data Citation*: California Office of Environmental Health Hazard Assessment. Wieland, W. 2018. "CalEnviroScreen 3.0: A Tool For Advancing Environmental Justice", California Environmental Protection Agency. https://oehha.ca.gov/calenviroscreen/report/calenviroscreen-30
+**Data Citation**: California Office of Environmental Health Hazard Assessment. Wieland, W. 2018. "CalEnviroScreen 3.0: A Tool For Advancing Environmental Justice", California Environmental Protection Agency. https://oehha.ca.gov/calenviroscreen/report/calenviroscreen-30
